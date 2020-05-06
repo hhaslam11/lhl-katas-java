@@ -10,7 +10,15 @@ public class kata2 {
    * @url https://web.compass.lighthouselabs.ca/prep/prep/activities/643
    */
   static int run(int[] numbers, String condition) {
-    return 0;
+    int sum = 0;
+    for (int i = 0; i < numbers.length; i++) {
+      if (condition.equals("odd")) {
+        if (numbers[i] % 2 != 0) sum += numbers[i];
+      } else if (condition.equals("even")) {
+        if (numbers[i] % 2 == 0) sum += numbers[i];
+      }
+    }
+    return sum;
   }
   static void test() {
     int[] testArr1 = {1, 2, 3, 4, 5};
