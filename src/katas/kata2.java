@@ -1,6 +1,14 @@
 package katas;
 
 public class kata2 {
+  /**
+   * Conditional Sums
+   * Add only the numbers in the array which match the given condition
+   * @param numbers array of integers
+   * @param condition either "odd" or "even"
+   * @return the sum of every number that matches the condition
+   * @url https://web.compass.lighthouselabs.ca/prep/prep/activities/643
+   */
   static int run(int[] numbers, String condition) {
     return 0;
   }
