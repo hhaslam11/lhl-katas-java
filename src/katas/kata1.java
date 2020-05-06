@@ -1,10 +1,9 @@
 package katas;
 
+import java.util.Arrays;
+
 import static java.lang.System.out;
 
-/**
- * Sum the largest number
- */
 public class kata1 {
   static void test() {
     int[] testData1 = {1, 10};
@@ -16,8 +15,13 @@ public class kata1 {
     out.println(run(testData3) + " should be 126");
   }
 
+  /**
+   * Find the two largest numbers in an array, and sum them.
+   */
   private static int run(int[] numbers) {
+    int len = numbers.length;
 
-    return 0;
+    Arrays.sort(numbers);
+    return (numbers[len - 1] + numbers[len - 2]);
   }
 }
