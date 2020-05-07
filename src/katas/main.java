@@ -5,6 +5,7 @@ public class main {
 //    kata1.test();
 //    kata2.test();
 //    kata3.test();
-    kata4.test();
+//    kata4.test();
+    kata5.test();
   }
 }
