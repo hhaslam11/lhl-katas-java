@@ -9,7 +9,7 @@ public class kata5 {
    * @url https://web.compass.lighthouselabs.ca/activities/782
    */
   private static String run(String text) {
-    return "";
+    return text.trim().replaceAll(" ", "%20");
   }
   public static void test() {
     System.out.println(run("Lighthouse Labs") + " should be Lighthouse%20Labs");
