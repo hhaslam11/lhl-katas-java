@@ -9,7 +9,15 @@ public class kata4 {
    * @url https://web.compass.lighthouselabs.ca/activities/781
    */
   static Instructor run(Instructor[] instructors) {
-    return instructors[0];
+    Instructor longestName = instructors[0];
+
+    for (int i = 1; i < instructors.length; i++) {
+      if (instructors[i].getName().length() > longestName.getName().length()) {
+        longestName = instructors[i];
+      }
+    }
+
+    return longestName;
   }
   static void test() {
     final Instructor samuel   = new Instructor("Samuel", "iOS");
